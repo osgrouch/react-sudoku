@@ -1,0 +1,10 @@
+.hint-label {
+	/* horizontally center the hints */
+	display: inline-block;
+	text-align: center;
+
+	color: #EA638C;
+	font-size: 1.75em;
+
+	padding: .1em .3em;
+}

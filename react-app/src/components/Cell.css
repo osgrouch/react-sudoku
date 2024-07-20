@@ -1,0 +1,12 @@
+.cell {
+	/* create a 3x3 grid for the hints in each cell*/
+	display: inline-grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-content: space-evenly; /* vertically center the hints */
+
+	height: 9em;
+	width: 9em;
+
+	background-color: #005377;
+	margin: 1em;
+}
