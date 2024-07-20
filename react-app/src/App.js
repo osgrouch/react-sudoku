@@ -1,10 +1,10 @@
 import './App.css';
-import Cell from './cells/Cell';
+import Grid from './grid/Grid';
 
 function App() {
 	return (
 		<div className="App">
-			<Cell/>
+			<Grid/>
 		</div>
 	);
 }

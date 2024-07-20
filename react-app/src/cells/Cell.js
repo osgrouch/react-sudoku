@@ -7,7 +7,8 @@ export default class Cell extends React.Component {
 		super(props);
 		this.state = {
 			// TODO: consider if cell really needs to know about the state of its hints
-			hints: Array(9).fill(false)
+			hints: Array(9).fill(false),
+			number: props.number
 		};
 	}
 
