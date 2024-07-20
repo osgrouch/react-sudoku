@@ -1,0 +1,25 @@
+.cell-label > span {
+	/* center the label text in the cell */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cell-label {
+	font-size: 6em;
+	font-weight: bold;
+
+	position: relative;
+	height: inherit;
+	width: inherit;
+}
+
+/* display given cells as different from guessed cells*/
+.given-true {
+	color: #EA638C;
+}
+
+.given-false {
+	color: #43AA8B;
+}
