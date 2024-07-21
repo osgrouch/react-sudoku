@@ -3,9 +3,9 @@
 	display: inline-grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 
-	height: 22em;
-	width: 22em;
-	margin: 0.25em;
+	height: 19em;
+	width: 19em;
+	margin: 0.1em;
 
 	background-color: #0A3446;
 }
