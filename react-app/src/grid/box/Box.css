@@ -1,0 +1,11 @@
+.box {
+	/* create a 3x3 grid for the cells*/
+	display: inline-grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+	height: 22em;
+	width: 22em;
+	margin: 0.25em;
+
+	background-color: #0A3446;
+}

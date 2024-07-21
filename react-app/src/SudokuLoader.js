@@ -1,12 +1,11 @@
-import './App.css';
 import Grid from './grid/Grid';
 
-function App() {
+function SudokuLoader() {
 	return (
 		<div className="App">
-			<Grid/>
+			<Grid difficulty={0}/>
 		</div>
 	);
 }
 
-export default App;
+export default SudokuLoader;

@@ -1,11 +1,15 @@
+.hint-label > span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .hint-label {
-	display: inline-block;
-	text-align: center;
+	position: relative;
 
 	color: #43AA8B;
-	font-size: 1.75em;
-
-	padding: .1em .3em;
+	font-size: 1.25em;
 }
 
 /* display hint on hover, to let user know this is clickable */

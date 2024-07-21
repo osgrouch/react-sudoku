@@ -1,10 +1,9 @@
 .grid {
-	/* create a 3x3 grid for the cells*/
-	display: inline-grid;
+	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 
-	height: 28em;
-	width: 28em;
+	height: min-content;
+	width: min-content;
 
 	background-color: #0A3446;
 }

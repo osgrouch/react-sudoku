@@ -1,0 +1,22 @@
+import React from 'react';
+import Cell from '../../cells/Cell';
+import './Box.css';
+
+export default class Box extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			cells: Array(9).fill(0)  /* the value of a cell is the given number for the cell, the current user guess for the number or 0 if not guessed and not given  */
+		};
+	}
+
+	render() {
+		return (
+			<div className="box">
+				{this.state.cells.map((value, index) => (
+					<Cell number={value} key={index}/>
+				))}
+			</div>
+		);
+	}
+}

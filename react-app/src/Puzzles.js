@@ -33,3 +33,8 @@ const hardPuzzle = [
 	0, 4, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 6, 4, 0, 0, 9, 0, 5
 ];
+
+/* export puzzles as an array for easy access through index */
+export const puzzles = [
+	easyPuzzle, mediumPuzzle, hardPuzzle
+];

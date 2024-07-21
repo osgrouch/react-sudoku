@@ -1,21 +1,24 @@
 import React from 'react';
-import Cell from '../cells/Cell';
+import Box from './box/Box';
 import './Grid.css';
 
 export default class Grid extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cells: Array(9).fill(false)
+			boxes: Array(9).fill(0),
+			difficulty: props.difficulty
 		};
 	}
 
 	render() {
 		return (
 			<div className="grid">
-				{this.state.cells.map((value, index) => (
-					<Cell number={index} key={index}/>
-				))}
+				{
+					this.state.boxes.map((box, index) => {
+						return <Box key={index}/>;
+					})
+				}
 			</div>
 		);
 	}
