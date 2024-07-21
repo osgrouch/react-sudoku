@@ -1,11 +1,10 @@
 import Grid from './grid/Grid';
+import { puzzles } from './Puzzles';
 
-function SudokuLoader() {
+export default function SudokuLoader(props) {
 	return (
 		<div className="App">
-			<Grid difficulty={0}/>
+			<Grid puzzle={puzzles[props.difficulty]}/>
 		</div>
 	);
 }
-
-export default SudokuLoader;

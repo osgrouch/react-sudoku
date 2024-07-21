@@ -10,8 +10,8 @@ export default class Cell extends React.Component {
 			// TODO: consider if cell really needs to know about the state of its hints
 			hints: Array(9).fill(false),  /* the value of the hint is whether it is to be displayed or not*/
 			number: props.number, /* the given number for the cell, the current user guess for the number or 0 if not guessed and not given */
-			display: props.given, /* if given, then display the number, if not then don't until modified later*/
-			given: props.given    /* true if given, i.e. the cell cannot be erased */
+			display: props.number !== 0, /* if given, then display the number, if not then don't until modified later*/
+			given: props.number !== 0    /* true if given, i.e. the cell cannot be erased */
 		};
 	}
 

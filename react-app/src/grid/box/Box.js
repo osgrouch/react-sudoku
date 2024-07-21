@@ -6,7 +6,7 @@ export default class Box extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cells: Array(9).fill(0)  /* the value of a cell is the given number for the cell, the current user guess for the number or 0 if not guessed and not given  */
+			cells: props.cells  /* the value of a cell is the given number for the cell, the current user guess for the number or 0 if not guessed and not given  */
 		};
 	}
 

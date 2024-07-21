@@ -6,8 +6,8 @@ export default class Grid extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			boxes: Array(9).fill(0),
-			difficulty: props.difficulty
+			boxes: Array(9).fill(Array(9).fill(0)),
+			puzzle: props.puzzle
 		};
 	}
 
@@ -15,8 +15,8 @@ export default class Grid extends React.Component {
 		return (
 			<div className="grid">
 				{
-					this.state.boxes.map((box, index) => {
-						return <Box key={index}/>;
+					this.state.puzzle.map((box, index) => {
+						return <Box cells={box} key={index}/>;
 					})
 				}
 			</div>
