@@ -1,0 +1,25 @@
+.digit-selector-container {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+	height: min-content;
+	width: min-content;
+}
+
+.digit-container {
+	height: 6em;
+	width: 6em;
+
+	background-color: #00537766;
+	margin: 0.2em;
+	display: flex;
+	align-items: center;
+}
+
+.digit-container > span {
+	font-size: 4em;
+	color: #EBEBEB;
+
+	width: 100%;
+	text-align: center;
+}

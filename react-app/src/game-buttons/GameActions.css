@@ -1,5 +1,6 @@
 .game-actions-container {
 	display: inline-flex;
+	margin-bottom: 2em;
 }
 
 .game-action-btn {
@@ -23,7 +24,12 @@ span {
 	color: #EBEBEB;
 }
 
-.guess-btn > span, .erase-btn > span {
+.guess-btn > span {
 	font-size: 4em;
 	color: #43AA8B;
+}
+
+.erase-btn > span {
+	font-size: 4em;
+	color: #C33C54;
 }
