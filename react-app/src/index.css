@@ -2,3 +2,7 @@ body {
 	margin: 0;
 	background-color: #0A3446;
 }
+
+.App {
+	display: inline-flex;
+}

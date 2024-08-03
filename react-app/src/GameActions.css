@@ -1,0 +1,29 @@
+.game-actions-container {
+	display: inline-flex;
+}
+
+.game-action-btn {
+	height: 6em;
+	width: 6em;
+	margin: 0.2em;
+	background-color: #00537766;
+
+	display: flex;
+	align-items: center;
+}
+
+span {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.annotations-btn > span {
+	font-size: 1.25em;
+	color: #EBEBEB;
+}
+
+.guess-btn > span, .erase-btn > span {
+	font-size: 4em;
+	color: #43AA8B;
+}
