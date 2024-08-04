@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import DigitSelector from './game-buttons/DigitSelector';
-import GameActions from './game-buttons/GameActions';
+import DigitSelector from './game-actions/digit-selector/DigitSelector';
+import GameActions from './game-actions/GameActions';
 import Grid from './grid/Grid';
 import { puzzles } from './Puzzles';
 

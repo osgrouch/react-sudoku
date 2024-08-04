@@ -1,16 +1,23 @@
 import React from 'react';
 import './GameActions.css';
 
+/**
+ * Component for the user to select amongst the three game actions.
+ */
 export default class GameActions extends React.Component {
 	gameActions = ['annotate', 'guess', 'erase'];
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			selected: this.gameActions[0]
+			selected: this.gameActions[0]  /* which game action is currently selected? */
 		};
 	}
 
+	/**
+	 * Create the divs for the three game actions, taking into account if it is currently selected or not.
+	 * @returns {*[]} An array of divs.
+	 */
 	generateActionBtns = () => {
 		let divs = [];
 		const commonClass = 'game-action-btn';

@@ -9,7 +9,7 @@ export default class HintLabel extends React.Component {
 		super(props);
 		this.state = {
 			displayHint: props.display, /* to display a hint or not */
-			num: props.number       /* what number is this hint?*/
+			num: props.number           /* what number is this hint?*/
 		};
 	}
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cell from '../../cells/Cell';
+import Cell from './cells/Cell';
 import './Box.css';
 
 export default class Box extends React.Component {

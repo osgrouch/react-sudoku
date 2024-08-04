@@ -1,11 +1,14 @@
 import React from 'react';
 import './DigitSelector.css';
 
+/**
+ * Component for the user to select a digit to focus on in the game.
+ */
 export default class DigitSelector extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selected: 1
+			selected: 1  /* which digit is currently selected? */
 		};
 	}
 

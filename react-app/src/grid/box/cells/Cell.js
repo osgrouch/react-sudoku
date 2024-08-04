@@ -3,6 +3,9 @@ import './Cell.css';
 import CellLabel from './cell-label/CellLabel';
 import HintLabel from './hints/HintLabel';
 
+/**
+ * Component representing a Sudoku cell.
+ */
 export default class Cell extends React.Component {
 	constructor(props) {
 		super(props);
