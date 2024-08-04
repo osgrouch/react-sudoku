@@ -8,7 +8,7 @@
 .hint-label {
 	position: relative;
 
-	color: #43AA8B;
+	color: #EBEBEB;
 	font-size: 1.25em;
 }
 
@@ -20,10 +20,10 @@
 
 /* user set hint so display it */
 .hint-display-true {
-	opacity: 1;
+	opacity: 100%;
 }
 
 /* hide hint until set */
 .hint-display-false {
-	opacity: 0;
+	opacity: 0%;
 }

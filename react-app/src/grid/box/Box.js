@@ -2,6 +2,9 @@ import React from 'react';
 import Cell from './cells/Cell';
 import './Box.css';
 
+/**
+ * Component representing a 3x3 box of cells.
+ */
 export default class Box extends React.Component {
 	constructor(props) {
 		super(props);
