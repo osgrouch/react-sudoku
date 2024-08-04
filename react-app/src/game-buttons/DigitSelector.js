@@ -4,20 +4,35 @@ import './DigitSelector.css';
 export default class DigitSelector extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			selected: 1
+		};
 	}
+
+	/**
+	 * Generate a div for each digit from [1, 9] taking into account if it is currently selected or not.
+	 * @returns {*[]} An array of divs.
+	 */
+	generateDigitBtn = () => {
+		let divs = [];
+		for (let i = 1; i < 10; i++) {
+			let className = 'digit-container';
+			if (this.state.selected === i) className += ' selected';
+			divs.push(
+				<div key={i}
+				     className={className}
+				     onClick={() => this.setState({ selected: i })}>
+					<span>{i}</span>
+				</div>
+			);
+		}
+		return divs;
+	};
 
 	render() {
 		return (
 			<div className="digit-selector-container">
-				<div className="digit-container"><span>1</span></div>
-				<div className="digit-container"><span>2</span></div>
-				<div className="digit-container"><span>3</span></div>
-				<div className="digit-container"><span>4</span></div>
-				<div className="digit-container"><span>5</span></div>
-				<div className="digit-container"><span>6</span></div>
-				<div className="digit-container"><span>7</span></div>
-				<div className="digit-container"><span>8</span></div>
-				<div className="digit-container"><span>9</span></div>
+				{this.generateDigitBtn()}
 			</div>
 		);
 	}

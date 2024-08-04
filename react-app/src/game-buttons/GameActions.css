@@ -7,10 +7,20 @@
 	height: 6em;
 	width: 6em;
 	margin: 0.2em;
-	background-color: #00537766;
+
+	background-color: #005377;
+	opacity: 40%;
 
 	display: flex;
 	align-items: center;
+}
+
+.game-action-btn:hover, .game-action-btn:active {
+	opacity: 100%;
+}
+
+.selected {
+	opacity: 100%;
 }
 
 span {
